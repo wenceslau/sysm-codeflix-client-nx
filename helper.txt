@@ -1,0 +1,11 @@
+npm install --save-dev --save-exact prettier                                                => install prettier, for formatting code
+node --eval "fs.writeFileSync('.prettierrc','{}\n')"                                        => create .prettierrc file, for prettier configuration
+npm install -D prettier prettier-plugin-tailwindcss                                         => install prettier, for formatting code
+yarn add -D jest jest-environment-jsdom @testing-library/react @testing-library/jest-dom    => install package for tests, to execute tests
+npm install --save-dev @types/jest                                                          => install types for jest, for typescript
+npm install tailwind-scrollbar-hide                                                         => install tailwind-scrollbar-hide, for hiding scrollbar
+npm install @heroicons/react                                                                => install icons for react
+npm install zod                                                                             => install zod for validations, for validation of data
+npm install json-server@0.17.4                                                              => install json-server, for connection with fake api
+npm install @vidstack/react@next                                                            => install vidstack, for video player
+npm install @apollo/client graphql                                                          => install apollo, for connection with graphql
