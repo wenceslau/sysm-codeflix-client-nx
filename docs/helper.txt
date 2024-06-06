@@ -9,3 +9,6 @@ npm install zod                                                                 
 npm install json-server@0.17.4                                                              => install json-server, for connection with fake api
 npm install @vidstack/react@next                                                            => install vidstack, for video player
 npm install @apollo/client graphql                                                          => install apollo, for connection with graphql
+
+
+json-server --watch db.json -p 3333 -d 2000                                                => start json-server, for connection with fake api
