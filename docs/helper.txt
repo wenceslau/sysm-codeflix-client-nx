@@ -11,4 +11,4 @@ npm install @vidstack/react@next                                                
 npm install @apollo/client graphql                                                          => install apollo, for connection with graphql
 
 
-json-server --watch db.json -p 3333 -d 2000                                                => start json-server, for connection with fake api
+json-server --watch db.json -p 3333                                                         => start json-server, for connection with fake api
