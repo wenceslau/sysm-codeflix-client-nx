@@ -12,3 +12,10 @@ npm install @apollo/client graphql                                              
 
 
 json-server --watch db.json -p 3333                                                         => start json-server, for connection with fake api
+
+
+
+
+npm i eslint -D
+
+npm init @eslint/config@latest

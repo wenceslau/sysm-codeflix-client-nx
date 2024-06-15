@@ -1,4 +1,12 @@
 {
-  "extends": "next/core-web-vitals",
-  "rules": { "react/no-unescaped-entities": "off" }
+  "extends": "next",
+  "rules": {
+    "react/no-unescaped-entities": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": "error"
+  }
 }
