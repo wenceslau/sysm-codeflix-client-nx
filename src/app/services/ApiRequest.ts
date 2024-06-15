@@ -30,7 +30,7 @@ export async function apiRequest(
 ) {
   try {
 
-    const mergedOptions: RequestOptions = { ...defaultOptions, ...options };
+    const mergedOptions: RequestOptions = {...defaultOptions, ...options};
     const queryString = buildQueryString({...query, ...mergedOptions});
     let input = `${API_URL}/${endpoint}${queryString}`;
 
@@ -40,7 +40,8 @@ export async function apiRequest(
     if (!response.ok) {
       throw new Error(`API request failed with status ${response.status}`);
     }
-    return  await response.json();;
+    return await response.json();
+    ;
 
   } catch (error) {
     throw error;

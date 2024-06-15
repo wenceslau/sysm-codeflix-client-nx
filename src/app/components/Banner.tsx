@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import { InformationCircleIcon } from '@heroicons/react/24/outline';
-import { PlayIcon } from '@heroicons/react/24/solid';
-import { Movie } from '@/app/Types/movies';
+import {InformationCircleIcon} from '@heroicons/react/24/outline';
+import {PlayIcon} from '@heroicons/react/24/solid';
+import {Movie} from '@/app/Types/movies';
 import Link from 'next/link';
 
-export const Banner = ({ movie }: { movie: Movie }) => {
+export const Banner = ({movie}: { movie: Movie }) => {
   return (
     <div className="mb-10">
 
@@ -25,7 +25,7 @@ export const Banner = ({ movie }: { movie: Movie }) => {
             src={movie.bannerFileURL}
             alt={movie.title}
             fill={true}
-            className="object-cover object-top opacity-38 lg:hidden" />
+            className="object-cover object-top opacity-38 lg:hidden"/>
 
         </div>
 
@@ -45,14 +45,14 @@ export const Banner = ({ movie }: { movie: Movie }) => {
         <Link href={`/watch/${movie.id}`} target='_blank'>
           <button
             className="md:text-xl flex cursor-pointer items-center gap-x-2 rounded bg-white px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5">
-            <PlayIcon className="h-6 w-6" />
+            <PlayIcon className="h-6 w-6"/>
             Play
           </button>
         </Link>
 
         <button
           className="md:text-xl flex cursor-pointer items-center gap-x-2 rounded bg-gray-600 px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5">
-          <InformationCircleIcon className="h-6 w-6" />
+          <InformationCircleIcon className="h-6 w-6"/>
           More Info
         </button>
 

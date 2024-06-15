@@ -9,12 +9,12 @@ export type InputFieldProps = {
 }
 
 export const InputField: React.FC<InputFieldProps> = ({
-  id,
-  label,
-  name,
-  type,
-  placeholder
-}) => {
+                                                        id,
+                                                        label,
+                                                        name,
+                                                        type,
+                                                        placeholder
+                                                      }) => {
   return (
     <div className="flex flex-col space-y-1">
       <label htmlFor={id}
@@ -22,7 +22,7 @@ export const InputField: React.FC<InputFieldProps> = ({
         {label}
       </label>
       <input type={type} name={name} id={id} placeholder={placeholder}
-             className="rounded border-gray-t00 bg-gray-700 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent " />
+             className="rounded border-gray-t00 bg-gray-700 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent "/>
     </div>
 
   );
@@ -45,8 +45,8 @@ export default function Login() {
         </p>
       </div>
       <div className="mt-8 flex flex-col space-y-4">
-        <InputField id="email" name="email" label="Email" type="email" placeholder="Enter your email" />
-        <InputField id="password" name="password" label="Password" type="password" placeholder="Enter your password" />
+        <InputField id="email" name="email" label="Email" type="email" placeholder="Enter your email"/>
+        <InputField id="password" name="password" label="Password" type="password" placeholder="Enter your password"/>
       </div>
       <div className="mt-8 flex flex-col space-y-2 pt-2 sm:flex-row sm:space-y-2 sm:space-y-0">
         <button type="submit"

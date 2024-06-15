@@ -1,8 +1,8 @@
 'use client';
 
 import React from 'react';
-import { AuthForm } from '@/app/components/AuthForm';
-import { useRouter } from 'next/navigation';
+import {AuthForm} from '@/app/components/AuthForm';
+import {useRouter} from 'next/navigation';
 
 type ServerError = {
   message: string;
@@ -22,11 +22,11 @@ export default function LoginForm() {
     const email = formData.get('email');
     const password = formData.get('password');
 
-    try{
+    try {
       const response = await fetch('http://localhost:3000/auth/login/api', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, password }),
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({email, password}),
       });
 
       if (response.ok) {
@@ -37,7 +37,7 @@ export default function LoginForm() {
       const payload: ServerError[] = await response.json();
       setErrors(payload.map((error) => error.message));
 
-    }catch(error){
+    } catch (error) {
       console.log(error);
 
       setErrors(['An expected error ocurred']);
@@ -46,6 +46,6 @@ export default function LoginForm() {
 
   };
 
-  return <AuthForm formType="login" onSubmit={handleSubmit} />;
+  return <AuthForm formType="login" onSubmit={handleSubmit}/>;
 
 }

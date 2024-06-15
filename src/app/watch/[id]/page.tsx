@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '@/app/components/Header';
-import { getMovieById } from '@/app/services/MovieServive';
+import {getMovieById} from '@/app/services/MovieServive';
 import Player from '@/app/components/Player';
 
 interface IWatchProps {
@@ -9,15 +9,15 @@ interface IWatchProps {
   }
 }
 
-export default async function Watch({ params }: IWatchProps) {
+export default async function Watch({params}: IWatchProps) {
 
   const movie = await getMovieById(params.id);
 
-  if(!movie) {
+  if (!movie) {
     return <div>
       <div className='flex h-screen justify-center align-middle'>
-        <Header />
-        <main className='flex flex-1 flex-col items-center justify-center px-20 text-center' >
+        <Header/>
+        <main className='flex flex-1 flex-col items-center justify-center px-20 text-center'>
           <h1 className='text-2xl font-bold md:text-4xl lg:text-7xl'>
             Sorry, we couldn't find the movie you were looking for.
           </h1>

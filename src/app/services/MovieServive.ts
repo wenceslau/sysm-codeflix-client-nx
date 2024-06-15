@@ -1,6 +1,5 @@
-import { RequestOptions, apiRequest } from '@/app/services/ApiRequest';
-import { assertQualifiedTypeIdentifier } from '@babel/types';
-import { Movie, Movies } from '@/app/Types/movies';
+import {apiRequest, RequestOptions} from '@/app/services/ApiRequest';
+import {Movie, Movies} from '@/app/Types/movies';
 
 export const getMovieById = async (id: string): Promise<Movie> => {
   console.log('getMovieById', id);
@@ -16,7 +15,7 @@ export const getMoviesByGenre = async (genre: string, options?: RequestOptions):
   console.log('getMoviesByGenre', genre, options);
   return await apiRequest(
     'movies',
-    { genres_like: encodeURIComponent(genre) }, options,
+    {genres_like: encodeURIComponent(genre)}, options,
   );
 };
 

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { InputField } from '@/app/components/InputField';
+import {InputField} from '@/app/components/InputField';
 
 export function ForgotPasswordForm() {
 
@@ -22,7 +22,7 @@ export function ForgotPasswordForm() {
         </p>
       </div>
       <div className="mt-8 flex flex-col space-y-4">
-        <InputField id="email" name="email" label="Email" type="email" placeholder="Enter your email" />
+        <InputField id="email" name="email" label="Email" type="email" placeholder="Enter your email"/>
       </div>
       <div className="mt-8 flex flex-col space-y-2 pt-2 sm:flex-row sm:space-y-2 sm:space-y-0">
         <button type="submit"

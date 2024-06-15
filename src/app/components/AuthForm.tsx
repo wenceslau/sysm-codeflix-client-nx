@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { InputField } from '@/app/components/InputField';
+import {InputField} from '@/app/components/InputField';
 
 type AuthFormProps = {
   formType: 'login' | 'register';
@@ -25,10 +25,11 @@ export const AuthForm: React.FC<AuthFormProps> = ({formType, onSubmit}) => {
         </p>
       </div>
       <div className="mt-8 flex flex-col space-y-4">
-        <InputField id="email" name="email" label="Email" type="email" placeholder="Enter your email" />
-        <InputField id="password" name="password" label="Password" type="password" placeholder="Enter your password" />
+        <InputField id="email" name="email" label="Email" type="email" placeholder="Enter your email"/>
+        <InputField id="password" name="password" label="Password" type="password" placeholder="Enter your password"/>
         {formType === 'register' &&
-          <InputField id="confirmPassword" name="confirmPassword" label="Confirm Password" type="password" placeholder="Confirm your password" />
+          <InputField id="confirmPassword" name="confirmPassword" label="Confirm Password" type="password"
+                      placeholder="Confirm your password"/>
         }
       </div>
       <div className="mt-8 flex flex-col space-y-2 pt-2 sm:flex-row sm:space-y-2 sm:space-y-0">

@@ -1,16 +1,8 @@
 import Image from 'next/image';
-import { Movie, Movies } from '@/app/Types/movies';
-import Link from 'next/link';
-import {
-  ChevronDownIcon,
-  PlayIcon,
-  PlusIcon,
-  SpeakerWaveIcon,
-  UserGroupIcon,
-} from '@heroicons/react/24/outline';
-import { MovieInfo } from '@/app/components/MovieInfo';
+import {Movie} from '@/app/Types/movies';
+import {MovieInfo} from '@/app/components/MovieInfo';
 
-export function MovieCard ({ movie }: { movie: Movie }) {
+export function MovieCard({movie}: { movie: Movie }) {
   return (
     <div className="group relative min-w-[12vh] rounded bg-zinc-900 md:min-h-[12vw]">
       <Image
@@ -30,7 +22,7 @@ export function MovieCard ({ movie }: { movie: Movie }) {
           className="duration h-[12vw] w-full cursor-pointer rounded-t-md object-cover object-top shadow-xl transition"
         />
 
-        <MovieInfo movie={movie} />
+        <MovieInfo movie={movie}/>
 
       </div>
 
