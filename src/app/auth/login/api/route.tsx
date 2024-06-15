@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { loginValidation } from '@/app/lib/validations/LoginValidation'
+import { loginValidation } from '@/app/lib/validations/LoginValidation';
 
 export async function POST(request: NextRequest) {
   try {

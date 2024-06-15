@@ -9,8 +9,8 @@ export default function RegisterForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     alert('submitting form register');
     e.preventDefault();
-  }
+  };
 
-  return <AuthForm formType="register" onSubmit={handleSubmit} />
+  return <AuthForm formType="register" onSubmit={handleSubmit} />;
 
 }

@@ -7,6 +7,6 @@ const createApolloClient = () => {
         }),
         cache: new InMemoryCache(),
     });
-}
+};
 
 export const apolloClient = createApolloClient();

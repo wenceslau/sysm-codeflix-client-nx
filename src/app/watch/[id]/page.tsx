@@ -23,7 +23,7 @@ export default async function Watch({ params }: IWatchProps) {
           </h1>
         </main>
       </div>
-    </div>
+    </div>;
   }
 
   return (

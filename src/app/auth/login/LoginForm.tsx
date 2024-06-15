@@ -46,6 +46,6 @@ export default function LoginForm() {
 
   };
 
-  return <AuthForm formType="login" onSubmit={handleSubmit} />
+  return <AuthForm formType="login" onSubmit={handleSubmit} />;
 
 }

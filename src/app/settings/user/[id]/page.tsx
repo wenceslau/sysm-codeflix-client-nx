@@ -1,7 +1,7 @@
 
-import { getUserById, getUserDate } from "@/app/lib/settings";
-import { notFound } from "next/navigation";
-import React from "react";
+import { getUserById, getUserDate } from '@/app/lib/settings';
+import { notFound } from 'next/navigation';
+import React from 'react';
 
 async function UserPage({ params }: { params: { id: string } }) {
 
@@ -26,7 +26,7 @@ async function UserPage({ params }: { params: { id: string } }) {
             </div>
 
         </div>
-    )
+    );
 
 }
 

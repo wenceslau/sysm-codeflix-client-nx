@@ -27,7 +27,7 @@ export const InputField: React.FC<InputFieldProps> = ({
 
   );
 
-}
+};
 
 export default function Login() {
   return (

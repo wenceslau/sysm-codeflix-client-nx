@@ -1,6 +1,6 @@
-import React from "react";
-import { getAppSettings } from "../lib/settings";
-import BuggyButton from "../components/BuggyButton";
+import React from 'react';
+import { getAppSettings } from '../lib/settings';
+import BuggyButton from '../components/BuggyButton';
 
 async function SettingsPage() {
 
@@ -17,7 +17,7 @@ async function SettingsPage() {
 
             <BuggyButton />
         </div>
-    </div>
+    </div>;
 
 }
 

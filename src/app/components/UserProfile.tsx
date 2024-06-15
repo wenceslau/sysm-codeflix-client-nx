@@ -1,6 +1,6 @@
 'use client';
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 export const UserProfile = () => (
     <div className="flex items-center space-x-4">

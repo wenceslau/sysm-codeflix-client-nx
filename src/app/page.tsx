@@ -1,6 +1,6 @@
-import Header from "./components/Header";
-import { MovieRow } from "./components/MovieRow";
-import { Banner } from "./components/Banner";
+import Header from './components/Header';
+import { MovieRow } from './components/MovieRow';
+import { Banner } from './components/Banner';
 import { getFeaturedMovie, getMoviesByGenre } from '@/app/services/MovieServive';
 // import { getFeaturedMovie, getMoviesByGenre } from '@/app/services/MovieQuery';
 
@@ -13,7 +13,7 @@ export default async function Home() {
 
   const movies = await Promise.all(genres.map(async genre => {
         const movies = await getMoviesByGenre(genre, { _limit: 8 });
-        return { sectionTitle: genre, movies}
+        return { sectionTitle: genre, movies};
       })
   );
 

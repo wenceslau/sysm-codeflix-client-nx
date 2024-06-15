@@ -1,6 +1,6 @@
-import BuggyButton from "@/app/components/BuggyButton";
-import { getUserDate } from "@/app/lib/settings";
-import React from "react";
+import BuggyButton from '@/app/components/BuggyButton';
+import { getUserDate } from '@/app/lib/settings';
+import React from 'react';
 
 async function UserPage() {
 
@@ -20,7 +20,7 @@ async function UserPage() {
             </div>
 
         </div>
-    )
+    );
 
 }
 

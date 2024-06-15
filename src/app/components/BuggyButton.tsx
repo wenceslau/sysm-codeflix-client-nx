@@ -1,12 +1,12 @@
-'use client'
+'use client';
 
-import React from "react"
+import React from 'react';
 
 export default function BuggyButton() {
-    const [cliecked, setClicked] = React.useState(false)
+    const [cliecked, setClicked] = React.useState(false);
 
     if (cliecked) {
-        throw new Error("I crashed!")
+        throw new Error('I crashed!');
     }
 
     return <button
@@ -15,5 +15,5 @@ export default function BuggyButton() {
             setClicked(true)
         }
     >Trigger error
-    </button>
+    </button>;
 }
