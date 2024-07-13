@@ -19,3 +19,7 @@ json-server --watch db.json -p 3333                                             
 npm i eslint -D
 
 npm init @eslint/config@latest
+
+npm install husky -D
+
+npx husky init
